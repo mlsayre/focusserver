@@ -11,6 +11,12 @@ Also, the white background color area in the middle will only be shown if index.
 
 The interesting (bad) code which needs to be fixed when I have the time:
 
+                        socket.print "<style>body{padding:200px 325px;
+                                                  background-color:red;}
+                                             .focus{background-color:white;
+                                                    height:50px;}</style>"
                         
+                        IO.copy_stream(file, socket)
 
-IO.copy_stream seems to be fickle.
+                        
+IO.copy_stream seems to be fickle. Interesting indent problem, too.
